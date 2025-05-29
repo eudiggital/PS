@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Piauí Shopping Center - Links Úteis</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+
+<link href="style.css" rel="stylesheet"/></head>
+<body class="min-h-screen animated-gradient-bg">
+<div class="fixed top-10 left-10 w-8 h-8 text-orange-500 opacity-30 dark:text-orange-400 dark:opacity-15 floating z-0" style="animation-delay: 0.5s;">
+<i class="fas fa-tag text-xl"></i>
+</div>
+<div class="fixed bottom-20 right-12 sm:right-16 w-12 h-12 text-orange-400 opacity-25 dark:text-orange-300 dark:opacity-10 floating z-0" style="animation-delay: 1.5s;">
+<i class="fas fa-star text-3xl"></i>
+</div>
+<div class="fixed top-1/3 sm:top-40 right-5 sm:right-20 w-7 h-7 text-orange-500 opacity-35 dark:text-orange-400 dark:opacity-20 floating z-0" style="animation-delay: 0.8s;">
+<i class="fas fa-shopping-bag text-lg"></i>
+</div>
+<div class="fixed bottom-1/4 sm:bottom-10 left-1/4 sm:left-24 w-10 h-10 text-primary opacity-20 dark:text-orange-500 dark:opacity-10 floating z-0" style="animation-delay: 2s;">
+<i class="fas fa-film text-2xl"></i>
+</div>
+<div class="fixed top-1/2 left-5 sm:left-20 w-6 h-6 text-orange-400 opacity-35 dark:text-orange-300 dark:opacity-25 floating z-0" style="animation-delay: 1.2s;">
+<i class="fas fa-heart text-md"></i>
+</div>
+<div class="fixed top-3/4 right-1/3 w-9 h-9 text-orange-500 opacity-25 dark:text-orange-400 dark:opacity-10 floating z-0" style="animation-delay: 2.5s;">
+<i class="fas fa-gift text-xl"></i>
+</div>
+<header class="relative w-full max-w-lg mx-auto mt-8 overflow-hidden rounded-xl shadow-carousel-lift dark:shadow-carousel-lift-dark fade-in-custom mb-6 sm:mb-8 z-10">
+<div class="carousel-container relative h-60 sm:h-72 md:h-80 w-full">
+<div class="carousel-slide-item absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-r from-orange-500 to-primary">
+<div class="text-center px-4">
+<div class="bg-black/30 dark:bg-black/40 backdrop-blur-sm rounded-full px-3 py-1 text-xs sm:px-4 sm:text-sm inline-block mb-2 sm:mb-3"><span class="text-white font-medium">PROMOÇÃO</span></div>
+<h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Black Friday Antecipada</h2>
+<p class="text-sm sm:text-base text-gray-100 dark:text-gray-200 mb-3 sm:mb-4">Até 60% OFF</p>
+<button class="bg-white text-primary px-4 py-2 text-sm sm:px-6 sm:text-base rounded-full font-semibold hover:bg-orange-100 transition-all duration-300 transform hover:scale-105"><i class="fas fa-arrow-right mr-1"></i> Saiba mais</button>
+</div>
+</div>
+<div class="carousel-slide-item absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600">
+<div class="text-center px-4">
+<div class="bg-black/30 dark:bg-black/40 backdrop-blur-sm rounded-full px-3 py-1 text-xs sm:px-4 sm:text-sm inline-block mb-2 sm:mb-3"><span class="text-white font-medium">NOVIDADE</span></div>
+<h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Nova Praça de Alimentação</h2>
+<p class="text-sm sm:text-base text-gray-100 dark:text-gray-200 mb-3 sm:mb-4">10 novos restaurantes</p>
+<button class="bg-white text-blue-500 px-4 py-2 text-sm sm:px-6 sm:text-base rounded-full font-semibold hover:bg-blue-100 transition-all duration-300 transform hover:scale-105"><i class="fas fa-utensils mr-1"></i> Conhecer</button>
+</div>
+</div>
+<div class="carousel-slide-item absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-r from-purple-500 to-purple-600">
+<div class="text-center px-4">
+<div class="bg-black/30 dark:bg-black/40 backdrop-blur-sm rounded-full px-3 py-1 text-xs sm:px-4 sm:text-sm inline-block mb-2 sm:mb-3"><span class="text-white font-medium">CINEMA</span></div>
+<h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">Estreias Imperdíveis</h2>
+<p class="text-sm sm:text-base text-gray-100 dark:text-gray-200 mb-3 sm:mb-4">Os maiores lançamentos</p>
+<button class="bg-white text-purple-500 px-4 py-2 text-sm sm:px-6 sm:text-base rounded-full font-semibold hover:bg-purple-100 transition-all duration-300 transform hover:scale-105"><i class="fas fa-ticket-alt mr-1"></i> Ver horários</button>
+</div>
+</div>
+<button class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 dark:bg-black/40 dark:hover:bg-black/60 text-white p-2 rounded-full transition backdrop-blur-sm z-20" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+<button class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 dark:bg-black/40 dark:hover:bg-black/60 text-white p-2 rounded-full transition backdrop-blur-sm z-20" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+<div class="absolute bottom-3 sm:bottom-4 left-0 right-0 flex justify-center space-x-2 z-20" id="carouselIndicators"></div>
+</div>
+</header>
+<div class="relative w-full max-w-lg mx-auto bg-componentBgLight/80 dark:bg-brandBlack/80 backdrop-blur-md shadow-xl dark:shadow-2xl rounded-xl p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-8 mb-6 sm:mb-8 z-10">
+<div class="text-center py-4 sm:py-0"> <div class="logo-enter inline-block"> <div class="flex flex-col items-center justify-center">
+<div class="bg-primary text-brandWhite p-3 sm:p-4 rounded-full mb-2 sm:mb-3 shadow-primary-glow pulse-custom"><i class="fas fa-shopping-bag text-2xl sm:text-3xl"></i></div>
+<h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-textBase dark:text-brandWhite">Piauí<span class="text-primary">Shopping Center</span></h1>
+<p class="text-orange-500 dark:text-orange-400 mt-1 text-sm sm:text-base flex items-center justify-center"><i class="fas fa-map-marker-alt mr-1"></i> Picos - PI</p>
+</div></div></div>
+<main class="px-0 sm:px-0 py-4 sm:py-0"> <div class="grid grid-cols-1 gap-3 sm:gap-4">
+<a class="link-card bg-componentBgLight dark:bg-componentBgDark rounded-xl p-4 sm:p-5 flex items-center space-x-3 sm:space-x-4 fade-in-custom" href="#" style="transition-delay: 0.1s;">
+<div class="bg-primary/10 dark:bg-primary/20 text-primary p-2.5 sm:p-3 rounded-lg shadow-sm"><i class="fas fa-store text-lg sm:text-xl"></i></div>
+<div class="flex-grow">
+<h3 class="font-semibold sm:font-bold text-base sm:text-lg text-textBase dark:text-brandWhite">Seja um Lojista</h3>
+<p class="text-xs sm:text-sm text-textMuted dark:text-gray-400">Venha fazer parte</p>
+</div>
+<div class="text-primary"><i class="fas fa-chevron-right"></i></div>
+</a>
+<a class="link-card bg-componentBgLight dark:bg-componentBgDark rounded-xl p-4 sm:p-5 flex items-center space-x-3 sm:space-x-4 fade-in-custom" href="#" style="transition-delay: 0.2s;">
+<div class="bg-primary/10 dark:bg-primary/20 text-primary p-2.5 sm:p-3 rounded-lg shadow-sm"><i class="fas fa-film text-lg sm:text-xl"></i></div>
+<div class="flex-grow">
+<h3 class="font-semibold sm:font-bold text-base sm:text-lg text-textBase dark:text-brandWhite">Cinema</h3>
+<p class="text-xs sm:text-sm text-textMuted dark:text-gray-400">Filmes em cartaz</p>
+</div>
+<div class="text-primary"><i class="fas fa-chevron-right"></i></div>
+</a>
+</div>
+</main>
+</div>
+<div class="relative w-full max-w-lg mx-auto px-4 sm:px-0 text-center fade-in-custom mb-6 sm:mb-8 z-10" style="transition-delay: 0.3s;">
+<h3 class="font-semibold text-base sm:text-lg text-textBase dark:text-brandWhite mb-3 sm:mb-4">Siga-nos</h3>
+<div class="flex justify-center space-x-3 sm:space-x-4">
+<a class="social-icon-custom bg-gray-200 dark:bg-componentBgDark text-textBase dark:text-brandWhite w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center hover:text-brandWhite hover:bg-blue-600 shadow-md" href="#"><i class="fab fa-facebook-f text-sm sm:text-base"></i></a>
+<a class="social-icon-custom bg-gray-200 dark:bg-componentBgDark text-textBase dark:text-brandWhite w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center hover:text-brandWhite hover:bg-pink-500 shadow-md" href="#"><i class="fab fa-instagram text-sm sm:text-base"></i></a>
+<a class="social-icon-custom bg-gray-200 dark:bg-componentBgDark text-textBase dark:text-brandWhite w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center hover:text-brandWhite hover:bg-sky-500 shadow-md" href="#"><i class="fab fa-twitter text-sm sm:text-base"></i></a>
+<a class="social-icon-custom bg-gray-200 dark:bg-componentBgDark text-textBase dark:text-brandWhite w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center hover:text-brandWhite hover:bg-red-600 shadow-md" href="#"><i class="fab fa-youtube text-sm sm:text-base"></i></a>
+<a class="social-icon-custom bg-gray-200 dark:bg-componentBgDark text-textBase dark:text-brandWhite w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center hover:text-brandWhite hover:bg-black shadow-md" href="#"><i class="fab fa-tiktok text-sm sm:text-base"></i></a>
+</div>
+</div>
+<footer class="relative w-full max-w-lg mx-auto px-4 sm:px-0 text-center pb-8 fade-in-custom z-10" style="transition-delay: 0.4s;">
+<p class="text-textMuted dark:text-gray-400 text-xs sm:text-sm">© <span id="currentYear"></span> Piauí Shopping Center</p>
+<p class="text-textMuted dark:text-gray-500 text-xs mt-1">Picos - PI | (XX) XXXXX-XXXX</p> </footer>
+<button aria-label="Alternar tema" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-14 h-14 bg-primary hover:bg-opacity-80 text-white rounded-full shadow-xl hover:shadow-2xl flex items-center justify-center transition-all duration-300 ease-in-out transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-componentBgLight dark:focus:ring-offset-brandBlack z-50" id="theme-toggle">
+</button>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const htmlEl = document.documentElement;
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const moonIcon = '<i class="fas fa-moon text-xl"></i>';
+            const sunIcon = '<i class="fas fa-sun text-xl"></i>';
+
+            function setTheme(isDark) {
+                if (isDark) { htmlEl.classList.add('dark'); if (themeToggleBtn) themeToggleBtn.innerHTML = sunIcon; localStorage.setItem('theme', 'dark'); }
+                else { htmlEl.classList.remove('dark'); if (themeToggleBtn) themeToggleBtn.innerHTML = moonIcon; localStorage.setItem('theme', 'light'); }
+            }
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') { setTheme(true); } else { setTheme(false); } // Light é o padrão
+            if (themeToggleBtn) { themeToggleBtn.addEventListener('click', () => { setTheme(!htmlEl.classList.contains('dark')); }); }
+
+            // --- CAROUSEL ---
+            const carouselSlides = document.querySelectorAll('.carousel-slide-item');
+            const indicatorsContainer = document.getElementById('carouselIndicators');
+            const prevBtn = document.getElementById('prevBtn'); const nextBtn = document.getElementById('nextBtn');
+            let currentSlide = 0; let slideInterval; let indicators = [];
+
+            function createIndicators() {
+                if (!indicatorsContainer) return; indicatorsContainer.innerHTML = ''; indicators = [];
+                carouselSlides.forEach((_, index) => {
+                    const indicator = document.createElement('div');
+                    indicator.classList.add('carousel-indicator', 'w-2.5', 'h-2.5','sm:w-3', 'sm:h-3', 'rounded-full', 'bg-gray-400', 'dark:bg-gray-600', 'cursor-pointer');
+                    if (index === currentSlide) { indicator.classList.add('active'); indicator.classList.remove('bg-gray-400', 'dark:bg-gray-600'); }
+                    indicator.addEventListener('click', () => { goToSlide(index); });
+                    indicatorsContainer.appendChild(indicator); indicators.push(indicator);
+                });
+            }
+            function initCarousel() {
+                if (carouselSlides.length === 0) return; createIndicators(); showSlide(currentSlide); startSlideShow();
+                if(prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); restartSlideShow(); });
+                if(nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); restartSlideShow(); });
+                const carouselContainer = document.querySelector('.carousel-container');
+                if (carouselContainer) { carouselContainer.addEventListener('mouseenter', pauseSlideShow); carouselContainer.addEventListener('mouseleave', startSlideShow); }
+            }
+            function showSlide(index) {
+                carouselSlides.forEach((slide, i) => { slide.style.opacity = i === index ? '1' : '0'; slide.style.zIndex = i === index ? '10' : '0'; });
+                if (indicators.length > 0) {
+                    indicators.forEach((indicator, i) => {
+                        indicator.classList.remove('active'); indicator.classList.add('bg-gray-400', 'dark:bg-gray-600');
+                        if (i === index) { indicator.classList.add('active'); indicator.classList.remove('bg-gray-400', 'dark:bg-gray-600');}
+                    });
+                }
+            }
+            function nextSlide() { currentSlide = (currentSlide + 1) % carouselSlides.length; showSlide(currentSlide); }
+            function prevSlide() { currentSlide = (currentSlide - 1 + carouselSlides.length) % carouselSlides.length; showSlide(currentSlide); }
+            function goToSlide(index) { currentSlide = index; showSlide(currentSlide); restartSlideShow(); }
+            function startSlideShow() { clearInterval(slideInterval); slideInterval = setInterval(nextSlide, 5000); }
+            function restartSlideShow() { pauseSlideShow(); startSlideShow(); }
+            function pauseSlideShow() { clearInterval(slideInterval); }
+            initCarousel();
+
+            // --- FADE IN SCROLL ---
+            const fadeElements = document.querySelectorAll('.fade-in-custom');
+            function checkScroll() { fadeElements.forEach(element => { const elementTop = element.getBoundingClientRect().top; if (elementTop < window.innerHeight - 50) { element.classList.add('visible'); } }); }
+            checkScroll(); window.addEventListener('scroll', checkScroll);
+
+            // --- CURRENT YEAR ---
+            const currentYearEl = document.getElementById('currentYear');
+            if (currentYearEl) { currentYearEl.textContent = new Date().getFullYear(); }
+
+            // --- PARTÍCULAS ---
+            const particleContainer = document.body;
+            const numParticles = 25;
+
+            for (let i = 0; i < numParticles; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                const startX = Math.random() * 100; const startY = Math.random() * 100;
+                const endX = startX + (Math.random() - 0.5) * 80; const endY = startY + (Math.random() - 0.5) * 80;
+                const duration = 15 + Math.random() * 15;
+                const midOpacity = 0.2 + Math.random() * 0.4; // Opacidade no meio da animação (0.2 a 0.6)
+                particle.style.setProperty('--x-start', `${startX}vw`); particle.style.setProperty('--y-start', `${startY}vh`);
+                particle.style.setProperty('--x-end', `${endX}vw`); particle.style.setProperty('--y-end', `${endY}vh`);
+                particle.style.setProperty('--duration', `${duration}s`);
+                particle.style.setProperty('--opacity-mid', `${midOpacity}`);
+                particle.style.animationDelay = `-${Math.random() * duration}s`;
+                particle.style.transform = `translate(${startX}vw, ${startY}vh)`;
+                particleContainer.appendChild(particle);
+            }
+        });
+    </script>
+<script src="script.js"></script></body>
+</html>
