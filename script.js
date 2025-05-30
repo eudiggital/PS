@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const savedTheme = localStorage.getItem('theme');
-    setTheme(savedTheme === 'dark'); // Define o tema na carga inicial
+    setTheme(savedTheme === 'dark');
 
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', function() {
@@ -37,19 +37,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createIndicators() {
         if (!indicatorsContainer) return;
-        indicatorsContainer.innerHTML = '';
-        indicators = [];
+        indicatorsContainer.innerHTML = ''; 
+        indicators = []; 
         carouselSlides.forEach((_, index) => {
             const indicator = document.createElement('div');
-            indicator.classList.add('carousel-indicator', 'w-2.5', 'h-2.5','sm:w-3', 'sm:h-3', 'rounded-full', 'bg-gray-400', 'dark:bg-gray-600', 'cursor-pointer');
-            if (index === currentSlide) {
-                indicator.classList.add('active');
-                indicator.classList.remove('bg-gray-400', 'dark:bg-gray-600');
-            }
+            indicator.classList.add(
+                'carousel-indicator',
+                'w-2.5', 'h-2.5', 'sm:w-3', 'sm:h-3',
+                'rounded-full',
+                'cursor-pointer'
+                // As classes de transição já estão no style.css para .carousel-indicator
+            );
             indicator.addEventListener('click', () => { goToSlide(index); });
             indicatorsContainer.appendChild(indicator);
             indicators.push(indicator);
         });
+    }
+
+    function showSlide(index) {
+        carouselSlides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? '1' : '0';
+            slide.style.zIndex = i === index ? '10' : '0';
+        });
+
+        if (indicators.length > 0) {
+            indicators.forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.add('active');
+                    indicator.classList.remove('bg-gray-400', 'dark:bg-gray-600');
+                } else {
+                    indicator.classList.remove('active');
+                    indicator.classList.add('bg-gray-400', 'dark:bg-gray-600');
+                }
+            });
+        }
     }
 
     function initCarousel() {
@@ -63,28 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (carouselContainer) {
             carouselContainer.addEventListener('mouseenter', pauseSlideShow);
             carouselContainer.addEventListener('mouseleave', startSlideShow);
-        }
-    }
-
-    function showSlide(index) {
-        carouselSlides.forEach((slide, i) => {
-            slide.style.opacity = i === index ? '1' : '0';
-            slide.style.zIndex = i === index ? '10' : '0';
-        });
-        if (indicators.length > 0) {
-            indicators.forEach((indicator, i) => {
-                indicator.classList.remove('active', 'w-3', 'h-3', 'sm:w-4', 'sm:h-4'); // Reset active specific size
-                indicator.classList.add('bg-gray-400', 'dark:bg-gray-600', 'w-2.5', 'h-2.5','sm:w-3', 'sm:h-3'); // Default size
-                if (i === index) {
-                    indicator.classList.add('active');
-                    indicator.classList.remove('bg-gray-400', 'dark:bg-gray-600');
-                }
-            });
-        }
-        if (indicators[index]) {
-            indicators[index].classList.add('active');
-            indicators[index].classList.remove('bg-gray-400', 'dark:bg-gray-600');
-            indicators[index].style.backgroundColor = 'var(--primary, #ff4300)';
         }
     }
 
@@ -118,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(slideInterval);
     }
 
-    initCarousel();
+    initCarousel(); // Chama a inicialização do carrossel
 
     const fadeElements = document.querySelectorAll('.fade-in-custom');
     function checkScroll() {
