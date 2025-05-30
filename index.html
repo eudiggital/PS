@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piauí Shopping Center</title>
+    <title>Piauí Shopping Center - Links Úteis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="fotos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="fotos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="fotos/favicon-16x16.png">
-    <link rel="manifest" href="fotos/site.webmanifest">
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -20,7 +16,7 @@
                     colors: {
                         primary: '#ff4300', brandWhite: '#ffffff', brandBlack: '#1a1a1a',
                         textBase: '#1f2937', textMuted: '#6b7280',
-                        componentBgLight: '#FAF9F6', componentBgDark: '#2d3748',
+                        componentBgLight: '#ffffff', componentBgDark: '#2d3748',
                         orange: { 100: '#fff8f5', 200: '#ffedd5', 300: '#fed7aa', 400: '#fb923c', 500: '#f97316', 600: '#ea580c' },
                         blue: { 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb' },
                         purple: { 400: '#c084fc', 500: '#a855f7', 600: '#9333ea' }
@@ -38,7 +34,7 @@
 </head>
 <body class="min-h-screen animated-gradient-bg flex flex-col">
 
-    <header class="relative w-full max-w-lg mx-auto mt-8 overflow-hidden rounded-xl shadow-carousel-lift dark:shadow-carousel-lift-dark fade-in-custom mb-12 sm:mb-16 z-10">
+    <header class="relative w-full max-w-lg mx-auto mt-8 overflow-hidden sm:rounded-xl shadow-carousel-lift dark:shadow-carousel-lift-dark fade-in-custom mb-12 sm:mb-16 z-10">
         <div class="carousel-container relative h-60 sm:h-72 md:h-80 w-full">
             <div class="carousel-slide-item absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-r from-orange-500 to-primary">
                 <div class="text-center px-4">
@@ -72,8 +68,9 @@
 
     <main class="flex-grow w-full">
         <div class="relative w-full max-w-lg mx-auto
-                    bg-slate-100 dark:bg-brandBlack/80 backdrop-blur-md
-                    shadow-xl dark:shadow-2xl rounded-xl  p-2 sm:p-4 md:p-5
+                    bg-gray-50 dark:bg-brandBlack/80 backdrop-blur-md
+                    shadow-symmetric-custom sm:rounded-xl
+                    p-2 sm:p-4 md:p-5
                     space-y-4 sm:space-y-5
                     mb-6 sm:mb-8 z-10">
             <div class="text-center py-4 sm:py-0">
