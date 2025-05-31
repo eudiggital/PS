@@ -1,11 +1,11 @@
 :root {
-    --gradient-color-1-light: #FAF9F6;
+    --gradient-color-1-light: #c0c0c0;
     --gradient-color-2-light: #e4e3e0;
-    --gradient-color-3-light: #ffffff;
+    --gradient-color-3-light: #e6e6e6;
     --gradient-color-4-light: #ff43001a;
-    --gradient-color-1-dark: #1a1a1a;
+    --gradient-color-1-dark: #343a40;
     --gradient-color-2-dark: #2c2c2c;
-    --gradient-color-3-dark: #1a1a1a;
+    --gradient-color-3-dark: #212529;
     --gradient-color-4-dark: #ff430025;
     --gradient-color-1: var(--gradient-color-1-light);
     --gradient-color-2: var(--gradient-color-2-light);
@@ -49,8 +49,27 @@ html.dark .link-card:hover { box-shadow: 0 10px 25px rgba(255, 67, 0, 0.25); }
 html.dark .link-card::before { background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent); }
 .link-card:hover::before { left: 100%; }
 .social-icon-custom { transition: all 0.3s ease; } .social-icon-custom:hover { transform: scale(1.2) rotate(5deg); }
-.logo-enter { animation: logoEnter 1s ease-out 0.3s forwards; }
-@keyframes logoEnter { 0% { opacity: 0; transform: scale(0.8) translateY(20px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+
+.logo-enter {
+    animation: logoEnter 1s ease-out 0.3s forwards;
+}
+@keyframes logoEnter {
+    0% { opacity: 0; transform: scale(0.8) translateY(20px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.logo-animada {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-animada:hover {
+    transform: scale(1.03);
+}
+
+html.dark .logo-animada {
+    filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.158));
+}
+
 .fade-in-custom { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
 .visible { opacity: 1; transform: translateY(0); }
 .particle {
